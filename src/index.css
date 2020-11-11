@@ -196,7 +196,7 @@ input[type="number"] {
 }
 
 .login-inner {
-  min-width: 360px;
+  min-width: 320px;
   width: 30%;
   height: 100%;
   background-color: #fff;
@@ -207,7 +207,7 @@ input[type="number"] {
 
 .login {
   width: 90%;
-  height: 85%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -324,7 +324,7 @@ button.login-submit {
 .otp-wrapper {
   height: 80%;
   width: 50%;
-  min-width: 350px;
+  min-width: 320px;
   border-radius: 15px;
   background-color: #fff;
   display: flex;
@@ -442,7 +442,7 @@ button.login-submit {
 }
 
 .navbar-mobile {
-  min-width: 360px;
+  min-width: 320px;
   width: 30%;
   height: 100%;
   background: #fff;
