@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 
 // Action Imports
-import { renderSignup } from "../../actions";
+import { renderSignup, renderThanksScreen } from "../../actions";
 
-const Signup = ({ showSignup, renderSignup }) => {
+// Image Imports
+import checkCircle from "../../images/check-circle.svg";
+
+const Signup = ({ showSignup, renderSignup, renderThanksScreen }) => {
   const [screen, setScreen] = useState(1);
   const [email, setEmail] = useState("");
 
@@ -18,6 +21,10 @@ const Signup = ({ showSignup, renderSignup }) => {
   const handleOtpSubmit = (e) => {
     e.preventDefault();
     setScreen(3);
+  };
+
+  const resetScreen = () => {
+    setScreen(1);
   };
 
   return (
@@ -48,7 +55,13 @@ const Signup = ({ showSignup, renderSignup }) => {
                 </button>
               </form>
             </div>
-            <div className="cross signup-cross" onClick={() => renderSignup()}>
+            <div
+              className="cross signup-cross"
+              onClick={() => {
+                resetScreen();
+                renderSignup();
+              }}
+            >
               <span></span>
               <span></span>
             </div>
@@ -66,9 +79,24 @@ const Signup = ({ showSignup, renderSignup }) => {
                 </button>
               </form>
             </div>
-            <div className="cross signup-cross" onClick={() => renderSignup()}>
+            <div
+              className="cross signup-cross"
+              onClick={() => {
+                resetScreen();
+                renderSignup();
+              }}
+            >
               <span></span>
               <span></span>
+            </div>
+          </>
+        )}
+        {screen === 3 && (
+          <>
+            {renderThanksScreen()}
+            <div className="thanks-wrapper">
+              <img src={checkCircle} alt="circle-check" />
+              <h3>Thanks. Successful!</h3>
             </div>
           </>
         )}
@@ -83,4 +111,6 @@ const mapStateToProps = ({ showSignup }) => {
   };
 };
 
-export default connect(mapStateToProps, { renderSignup })(Signup);
+export default connect(mapStateToProps, { renderSignup, renderThanksScreen })(
+  Signup
+);

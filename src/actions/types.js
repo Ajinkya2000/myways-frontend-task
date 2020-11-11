@@ -1,3 +1,5 @@
 export const SHOW_LOGIN = "SHOW_LOGIN";
 export const HIDE_LOGIN = "HIDE_LOGIN";
 export const RENDER_SIGNUP = "RENDER_SIGNUP";
+export const RENDER_NAVBAR = "RENDER_NAVBAR";
+export const RENDER_THANKS_SCREEN = "RENDER_THANKS_SCREEN";
