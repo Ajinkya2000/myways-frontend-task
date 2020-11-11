@@ -256,7 +256,7 @@ input[type="number"] {
 
 .login-form {
   width: 100%;
-  height: 95%;
+  height: 75%;
   border: 1px solid #70707032;
   display: flex;
   flex-direction: column;
@@ -559,6 +559,9 @@ button.login-submit {
 @media (max-width: 325px) {
   .form-heading {
     margin-bottom: 15px;
+  }
+  .login-form {
+    height: 95%;
   }
   form input {
     padding: 7px;
