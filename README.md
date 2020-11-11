@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Myways Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task -
+
+To create the frontend part given.
+
+## Summary -
+
+This website is created with React (version 17.0.1) with use of Redux (version 4.0.5) for state management.
+
+## Deployement -
+
+Deployed at Vercel. Click [here](http://myways.vercel.app)
 
 ## Available Scripts
 
