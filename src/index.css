@@ -256,7 +256,7 @@ input[type="number"] {
 
 .login-form {
   width: 100%;
-  height: 90%;
+  height: 95%;
   border: 1px solid #70707032;
   display: flex;
   flex-direction: column;
@@ -453,12 +453,12 @@ button.login-submit {
 }
 
 .navbar-mobile-inner {
-  height: 85%;
+  height: 80%;
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .for-you-mobile {
@@ -553,5 +553,15 @@ button.login-submit {
   }
   .otp-form {
     width: 90%;
+  }
+}
+
+@media (max-width: 325px) {
+  .form-heading {
+    margin-bottom: 15px;
+  }
+  form input {
+    padding: 7px;
+    margin-bottom: 10px;
   }
 }
